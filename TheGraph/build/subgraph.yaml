@@ -1,0 +1,26 @@
+specVersion: 0.0.2
+schema:
+  file: schema.graphql
+dataSources:
+  - kind: ethereum
+    name: Contract
+    network: rinkeby
+    source:
+      address: "0xC6997309943680be3B57e8BB8cDcad96126B061e"
+      abi: Contract
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - Connected
+        - MsgSent
+      abis:
+        - name: Contract
+          file: Contract\abis\Contract.json
+      eventHandlers:
+        - event: Connected(indexed address)
+          handler: handleConnected
+        - event: MsgSent(indexed address,indexed string)
+          handler: handleMsgSent
+      file: Contract\Contract.wasm
