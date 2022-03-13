@@ -1,0 +1,9 @@
+type Message @entity {
+  id: ID!
+  _message: Bytes!
+  _owner: Bytes! # address
+}
+
+type Owner @entity {
+  id: ID!
+}
