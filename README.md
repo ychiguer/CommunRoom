@@ -11,4 +11,4 @@ I had the idea to use TheGraph to query messages and then show them on whatever 
 
 # Information
 ### The Commun Room contract is deployed and published on rinkeby and here is its address: 0xC6997309943680be3B57e8BB8cDcad96126B061e
-### Here is TheGraph link: 
+### Here is TheGraph link: https://testnet.thegraph.com/subgraph?id=8pa5NJBUkrzG3YEzSkwajmD24ZjFbc6q8UnTiVuUHwqh
